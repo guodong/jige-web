@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <title>test</title>
+
+    <!-- Bootstrap -->
+	<link href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="style/main.css" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	
+</head>
+<body>
+<script type="text/javascript">
+$(function(){
+	$.ajax({
+		url:'http://api.jige.la.me/user/login',
+		dataType: 'json',
+		success: function(d){
+			alert(d.data.result);
+		}
+	})
+})
+</script>
+    <div class="container-fluid">
+	<div class="row" style="background-color:#6699ff">
+		<img src="images/nav1.jpg" alt="..." class="img-rounded" style="height:40px;margin-left:40px;float:left"/>
+		<a href="register.html" target="_top"><img src="images/nav3.jpg" alt="..." class="img-rounded" style="height:40px;margin-right:40px;float:right"/></a>
+		<a href="index-2.html" target="_top"><img src="images/nav2.jpg" alt="..." class="img-rounded" style="height:40px;margin-right:10px;float:right"/></a>
+	</div>
+		<div class="row">
+			<div class="header" style="background-image: url(images/bg.jpg)">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="logotxt"><h1><a href="http://www.mallschool.com">MallSchool</a></h1></div> 
+							<h2 class="text-center">喵校园</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row" style="text-align:center">
+			<div class="col-md-12">
+				<img src="images/caidan1.jpg" alt="..." class="img-rounded" style="height:100px;margin:30px"/>
+				<img src="images/caidan2.jpg" alt="..." class="img-rounded" style="height:100px;margin:30px"/>
+				<img src="images/caidan3.jpg" alt="..." class="img-rounded" style="height:100px;margin:30px"/>
+				<img src="images/caidan4.jpg" alt="..." class="img-rounded" style="height:100px;margin:30px"/>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

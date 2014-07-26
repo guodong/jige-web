@@ -1,78 +1,80 @@
 ﻿<!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    <title>test</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>test</title>
 
-    <!-- Bootstrap -->
-	<link href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-	<link href="style/main.css" rel="stylesheet">
+<!-- Bootstrap -->
+<link
+	href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css"
+	rel="stylesheet">
+<link href="style/main.css" rel="stylesheet">
 
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
     <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-	
-	
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	<style type="text/css">
-	.btn-primary
-	{
-		width:100%;
-	}
-	</style>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="/js/jquery.cookie.js"></script>
+
+<script data-main="js/main"
+	src="http://requirejs.org/docs/release/2.1.14/minified/require.js"></script>
+<style type="text/css">
+.btn-primary {
+	width: 100%;
+}
+</style>
+<script>
+
+</script>
 </head>
 <body>
-<script>
-$(function(){
-	$.ajax({
-		url:'http://api.jige.la.me/user/login',
-		type: 'post',
-		data:{email:"123@123.com", password:"123123"},
-		//dataType: 'json',
-		success: function(d){
-			alert(d);
-		}
-	})
-})
-</script>
-    <div class="container-fluid">
-		<div class="row" style="text-align:center;margin-top:150px;width:1100px;margin-right:auto;margin-left:auto;">
+<div id="user-info"></div>
+	<div class="container-fluid">
+		<div class="row"
+			style="text-align: center; margin-top: 150px; width: 1100px; margin-right: auto; margin-left: auto;">
 			<div class="col-lg-5 col-md-5">
-				<img src="images/banner/banner2.jpg"/>
+				<img src="images/banner/banner2.jpg" />
 			</div>
 			<div class="col-lg-5 col-md-5">
-				<div style="width:350px;margin-left:auto;margin-right:auto;padding-left:50px;">
-					<p style="margin-bottom:20px"><span style="float:left;">帐号登录</span><span style="float:right;font-size:12px;">还没有帐号？<a href="register.html" style="color:red; font-size:12px;">立刻注册</a></span></p>
-					<br/>
+				<div
+					style="width: 350px; margin-left: auto; margin-right: auto; padding-left: 50px;">
+					<p style="margin-bottom: 20px">
+						<span style="float: left;">帐号登录</span><span
+							style="float: right; font-size: 12px;">还没有帐号？<a
+							href="register.html" style="color: red; font-size: 12px;">立刻注册</a></span>
+					</p>
+					<br />
 					<form role="form">
-						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="手机号/邮箱" style="margin-top:20px">
-						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="密码" style="margin-top:20px;">
-						<div class="checkbox" style="margin-top:20px;">
-							<label style="float:left">
-								<input type="checkbox">记住帐号</input>
-							</label>
-							<label style="float:left">
-								<input type="checkbox">下次自动登录</input>
-							</label>
-							<a style="font-size:12px;color:blue;float:right" href="forgetpassword.html">忘记密码？</a>
+						<input type="email" class="form-control" id="exampleInputEmail1"
+							placeholder="手机号/邮箱" style="margin-top: 20px"> <input
+							type="password" class="form-control" id="exampleInputPassword1"
+							placeholder="密码" style="margin-top: 20px;">
+						<div class="checkbox" style="margin-top: 20px;">
+							<label style="float: left"> <input type="checkbox">记住帐号</input>
+							</label> <label style="float: left"> <input type="checkbox">下次自动登录</input>
+							</label> <a style="font-size: 12px; color: blue; float: right"
+								href="forgetpassword.html">忘记密码？</a>
 						</div>
 						<button type="submit" class="btn btn-primary">登录</button>
 					</form>
-					<p style="margin-top:20px;margin-bottom:20px;float:left;">使用合作帐号登录</p>
-					<img src="images/hezuo.jpg"/>
+					<p style="margin-top: 20px; margin-bottom: 20px; float: left;">使用合作帐号登录</p>
+					<img src="images/hezuo.jpg" />
 				</div>
 			</div>
 			<div class="col-lg-2 col-md-2">
-				<img src="images/banner/banner3.jpg"/>
+				<img src="images/banner/banner3.jpg" />
 			</div>
 		</div>
 	</div>
